@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="main.css" />
+    <!--css-->
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- bootstrap -->
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:wght@100&display=swap"
+          rel="stylesheet" />
+    <!--fonts-->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jquery -->
+</head>
+
+<body>
+<header>
+    <nav id="navBarId" class="resNavBar navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><span style="font-size: 130%">Ceylon</span>
+                <span style="font-size: 130%; color: #ffa500">Meds</span></a>
+            <button onclick="changeColor()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-auto gap-2">
+                    <li class="nav-item rounded">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item rounded">
+                        <a class="nav-link active" href="./SignIn/kavya.html">Sign In</a>
+                    </li>
+
+                    <li class="nav-item rounded">
+                        <a class="nav-link active" href="./singup/Signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link active" href="./pramesh/bootstrap.html">Inventory</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link active" href="./dashboard/pharmacy_dashboard.html">Pharmacy dashboard</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-content">
+        <h2>ABOUT US</h2>
+        <div class="line"></div>
+        <h3>Welcome to Ceylon Meds</h3>
+    </div>
+</header>
+
+<!--about us discription-->
+<section>
+    <div class="dis">
+        <p> With the country's foreign exchange reserves depleted, the nationalized health system could not afford to import drugs and medical supplies in sufficient quantities. Sri Lanka depends on imports for about 85% of its pharmaceutical needs and about 80% of its medical supplies. The country imported $815 million worth of drugs in 2021, but as of May only had about $25 million in foreign exchange reserves to pay for imports of all kinds. Sri Lanka's 3,500-bed National Hospital in Colombo, which normally has 1,300 medicines in stock, currently requires only 60 of the most essential drugs.
+        <br><br>The socio-economic crisis in Sri Lanka has put pressure on the healthcare system, resulting in a shortage of many important drugs and medical supplies in both the public and private sectors. Drug costs have also grown 30% island-wide at the same time. Through close collaboration with the Ministry of Health, UNDP and WHO was able to identify gaps in the distribution of medications, consumables, equipment, and devices across the nation. As a result, these crucial and critical drugs and medical supplies have been acquired.<br><br>
+            The majority of Sri Lanka's medications were formerly imported, but with the country's current lack of foreign currency, chances of doing so are slim. The price of prescription drugs increased by 40% in April 2022. Due to the economic crisis nowadays Sri Lankan government hospitals do not have at least 25% of listed medicines. so, patients have to collect them from pharmacies. But due to the economic crisis, 60% of Sri Lankans income has been reduced to a low budget with the dollar crisis, and as well as their 5% of unemployed too. Therefore, all people try to buy them for the least cost that is affordable to them as well as hope to find those medicines at the nearest pharmacy.<br><br>
+            In some areas patients are being turned away from hospitals and clinics due to the severe medicine shortage, which prevents them from receiving the necessary care. Most of them have chronic, incapacitating illnesses like diabetes, asthma, heart issues, and epilepsy. Every day they go without taking their prescription raises the possibility of complications, which could cause their diseases to significantly worsen or perhaps end fatally. Together with basic needed medications like Paracetamol, antibiotics, and pediatrics formulations, vital medications for the treatment of malaria are also in extremely short supply.<br><br>
+            Even though the current situation within the healthcare industry is worse like this, some pharmacies and hospitals are available with medicines in some amounts. As a software engineering undergraduate, you have to create a platform to connect people with those pharmacies and hospitals. In the platform that you are creating, users should be able to search for a medicine and check whether the availability of that medicine in the registered pharmacies and hospitals.<br><br>
+            So, We build an online pharmacy directory that will help users find the nearest pharmacies in Sri Lanka that have the medicines they need.</p>
+    </div>
+</section>
+<!--about us discription-->
+
+<!--footer-->
+<footer>
+    <div class="text-white" style="background-color: #1363df">
+        <p class="text-center p-4 m-0">Footer Content</p>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 50) {
+                $(".resNavBar").css("background", "#1363DF");
+                $(".resNavBar").css(
+                    "box-shadow",
+                    "0px 10px 13px -7px #000000, 0px 21px 14px 1px rgba(0,0,0,0.04)"
+                );
+            } else {
+                $(".resNavBar").css("background", "transparent");
+                $(".resNavBar").css(
+                    "box-shadow",
+                    "0px 0 0 0 transparent, 0px 0 0 1px transparent"
+                );
+            }
+        });
+    });
+
+    function changeColor() {
+        document.getElementById("navBarId").style.backgroundColor = "#1363DF";
+        document.getElementById("navBarId").style.boxShadow =
+            "0px 10px 13px -7px #000000, 0px 21px 14px 1px rgba(0,0,0,0.04)";
+    }
+</script>
+
+<!--footer-->
+
+</body>
+</html>

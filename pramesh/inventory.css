@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #636e72 !important;
+}
+
+.sec1{  
+        background-color: #828282;
+        text-align: right;
+        padding: 40px; 
+        border-style: solid;
+        width: 100%;
+    }
+
+    .table{
+        width: 100%;
+        border: 1px solid black;
+    }
+    
+    th{
+        border: 1px solid black;
+    }
+
+    td{
+        border: 1px solid black;
+    }
+    .accordion-button{
+        margin-left: 500px;
+        width: 500px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .accordion-button1{
+        width: 250px;
+        
+    }
+    .btn{
+        width: 500px;
+        
+    }
+
+    
